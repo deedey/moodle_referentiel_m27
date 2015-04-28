@@ -80,10 +80,10 @@
     if (!empty($CFG->ref_profilecategory) && !empty($CFG->ref_ddnfield)){  // Profil
         // profil non modifiable ici
         echo s($form->ddn_etudiant).' <i>'.get_string('profil_non_modifiable','referentiel').'</i>'."\n";
-        echo '<input type="hidden" name="ddn_etudiant" value="'.s($form->ddn_etudiant).'" />'."\n";
+        echo '<input type="hidden" name="ddn_etudiant" value="'.$ddn_etudiant.'" />'."\n";
     }
     else {
-		echo '<input type="text" name="ddn_etudiant" size="14" maxlength="14" value="'.s($form->ddn_etudiant).'" />'."\n";
+		echo '<input type="text" name="ddn_etudiant" size="14" maxlength="14" value="'.$ddn_etudiant.'" />'."\n";
     }
 ?>
     </td>
@@ -97,10 +97,10 @@
     if (!empty($CFG->ref_profilecategory) && !empty($CFG->ref_ldnfield)){  // Profil
         // profil non modifiable ici
         echo s($form->lieu_naissance).' <i>'.get_string('profil_non_modifiable','referentiel').'</i>'."\n";
-        echo '<input type="hidden" name="lieu_naissance" value="'.s($form->lieu_naissance).'" />'."\n";
+        echo '<input type="hidden" name="lieu_naissance" value="'.$lieu_naissance.'" />'."\n";
     }
     else {
-		echo '<input type="text" name="lieu_naissance" size="40" maxlength="255" value="'.s($form->lieu_naissance).'" />'."\n";
+		echo '<input type="text" name="lieu_naissance" size="40" maxlength="255" value="'.$lieu_naissance.'" />'."\n";
     }
 ?>
     </td>
@@ -114,10 +114,10 @@
     if (!empty($CFG->ref_profilecategory) && !empty($CFG->ref_dptfield)){  // Profil
         // profil non modifiable ici
         echo s($form->departement_naissance).' <i>'.get_string('profil_non_modifiable','referentiel').'</i>'."\n";
-        echo '<input type="hidden" name="departement_naissance" value="'.s($form->departement_naissance).'" />'."\n";
+        echo '<input type="hidden" name="departement_naissance" value="'.$departement_naissance.'" />'."\n";
     }
     else {
-		echo '<input type="text" name="departement_naissance" size="40" maxlength="255" value="'.s($form->departement_naissance).'" />'."\n";
+		echo '<input type="text" name="departement_naissance" size="40" maxlength="255" value="'.$departement_naissance.'" />'."\n";
     }
 ?>
     </td>
@@ -131,10 +131,10 @@
     if (!empty($CFG->ref_profilecategory) && !empty($CFG->ref_adrfield)){  // Profil
         // profil non modifiable ici
         echo s($form->adresse_etudiant).' <i>'.get_string('profil_non_modifiable','referentiel').'</i>'."\n";
-        echo '<input type="hidden" name="adresse_etudiant" value="'.s($form->adresse_etudiant).'" />'."\n";
+        echo '<input type="hidden" name="adresse_etudiant" value="'.$adresse_etudiant.'" />'."\n";
     }
     else {
-        echo '<input type="text" name="adresse_etudiant" size="60" maxlength="255" value="'.s($form->adress_etudiant).'" />'."\n";
+        echo '<input type="text" name="adresse_etudiant" size="60" maxlength="255" value="'.$adresse_etudiant.'" />'."\n";
     }
 ?>
     </td>
